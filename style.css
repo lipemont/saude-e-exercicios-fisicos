@@ -10,6 +10,27 @@
     src: url('fonts/cocogoose/Cocogoose-Pro-Regular-trial.ttf') format('truetype');
 }
 
+@media screen and (max-width: 800px) {
+    main {
+        padding: 10px 50px;
+    }
+    
+    img {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    main {
+        padding: 10px 20px; 
+    }
+    
+    h1 {
+        font-size: x-large;
+    }
+}
+
 *{
     font-family: "Montserrat", sans-serif;
     font-style:normal;
@@ -49,12 +70,11 @@ main{
     box-shadow: 1px 2px 10px #142625;
     min-width: 320px;
     max-width: 800px;
-    
-    padding: 10px 150px;
-    margin: 10px auto;
     display: flexbox;
     flex: auto;
     flex-direction: column;
+    padding: 10px 150px;
+    margin: 10px auto;
 }
 
 h1{
@@ -82,7 +102,7 @@ p {
 }
 
 
-div.video{
+.video{
     margin: auto;
     display: flex;
     justify-content: center;
@@ -94,8 +114,7 @@ img{
     box-shadow: 2px 3px 8px #142625;
     width: 350px;
     padding: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2% auto;
     display: block;
 }
 
@@ -121,7 +140,8 @@ a.button{
 
 address{
     font-size: small;
-    text-align: right;}
+    text-align: end;
+    justify-content: right;}
 
 
 a.button1:hover{
@@ -129,26 +149,4 @@ a.button1:hover{
     color: rgb(227, 241, 229);
     transform: scale(1.05);
     
-}
-
-
-@media screen and (max-width: 800px) {
-    main {
-        padding: 10px 50px;
-    }
-    
-    img {
-        width: 100%;
-    }
-}
-
-
-@media screen and (max-width: 320px) {
-    main {
-        padding: 10px 20px; 
-    }
-    
-    h1 {
-        font-size: x-large;
-    }
 }
